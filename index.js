@@ -5,7 +5,7 @@ function takeANumber(deliLine, name){
 }
 
 function nowServing(deliLine){
-  if(deliLine>0){
+  if(deliLine.length>0){
     name = deliLine[deliLine.length-(deliLine.length-1)]
     deliLine.shift()
     return name
