@@ -23,4 +23,7 @@ function currentLine(deliLine){
     }
     return message;
   }
+  else{
+    return "The line is currently empty"
+  }
 }
