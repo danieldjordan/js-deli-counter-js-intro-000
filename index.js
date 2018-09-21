@@ -6,11 +6,12 @@ function takeANumber(deliLine, name){
 
 function nowServing(deliLine){
   if(deliLine.length>0){
-    name = deliLine[deliLine.length-(deliLine.length-1)]
+    name = deliLine[0]
     deliLine.shift()
     return `Currently serving ${name}`
   }
   else{
     return "There is nobody waiting to be served!"
   }
+
 }
