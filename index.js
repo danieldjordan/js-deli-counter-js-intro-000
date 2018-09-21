@@ -16,7 +16,7 @@ function nowServing(deliLine){
 }
 
 function currentLine(deliLine){
-  if(deliLine>0){
+  if(deliLine.length>0){
     let message = 'The line is currently: ' 
     for(i = 0; i < deliLine.length; i++){
       message += `${i+1}. ${deliLine[i]}, `
@@ -24,6 +24,6 @@ function currentLine(deliLine){
     return message;
   }
   else{
-    return "The line is currently empty"
+    return "The line is currently empty."
   }
 }
