@@ -19,7 +19,7 @@ function currentLine(deliLine){
   if(deliLine.length>0){
     let message = 'The line is currently:'
     for(var i = 0; i < deliLine.length; i++){
-      if(i = (deliLine.length - 1)){
+      if((deliLine.length - 1) == i){
         message += `${i+1}. ${deliLine[i]}`
       }
       else{
