@@ -13,5 +13,14 @@ function nowServing(deliLine){
   else{
     return "There is nobody waiting to be served!"
   }
+}
 
+function currentLine(deliLine){
+  if(deliLine>0){
+    let message = 'The line is currently: ': 
+    for(i = 0; i < deliLine.length; i++){
+      message += `${i+1}. ${deliLine[i]}, `
+    }
+    return message;
+  }
 }
